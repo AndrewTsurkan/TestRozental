@@ -9,25 +9,27 @@
 /* Begin PBXBuildFile section */
 		5C4998662C7E03060019C8D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4998652C7E03060019C8D0 /* AppDelegate.swift */; };
 		5C4998682C7E03060019C8D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4998672C7E03060019C8D0 /* SceneDelegate.swift */; };
-		5C49986A2C7E03060019C8D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4998692C7E03060019C8D0 /* ViewController.swift */; };
-		5C49986D2C7E03060019C8D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C49986B2C7E03060019C8D0 /* Main.storyboard */; };
-		5C4998702C7E03060019C8D0 /* TestRenesans.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C49986E2C7E03060019C8D0 /* TestRenesans.xcdatamodeld */; };
+		5C49986A2C7E03060019C8D0 /* OnbordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4998692C7E03060019C8D0 /* OnbordingViewController.swift */; };
 		5C4998722C7E03070019C8D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4998712C7E03070019C8D0 /* Assets.xcassets */; };
 		5C4998752C7E03070019C8D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4998732C7E03070019C8D0 /* LaunchScreen.storyboard */; };
 		5C49987E2C7E04540019C8D0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5C49987D2C7E04540019C8D0 /* Alamofire */; };
 		5C4998802C7E04540019C8D0 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 5C49987F2C7E04540019C8D0 /* AlamofireDynamic */; };
+		5CC0385D2C7E06F7005E45CF /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0385C2C7E06F7005E45CF /* OnboardingContentView.swift */; };
+		5CC038602C7E0D3B005E45CF /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0385F2C7E0D3B005E45CF /* OnboardingModel.swift */; };
+		5CC038622C7E1913005E45CF /* OnboardingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC038612C7E1913005E45CF /* OnboardingDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C4998622C7E03060019C8D0 /* TestRenesans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRenesans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4998652C7E03060019C8D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C4998672C7E03060019C8D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C4998692C7E03060019C8D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5C49986C2C7E03060019C8D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5C49986F2C7E03060019C8D0 /* TestRenesans.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestRenesans.xcdatamodel; sourceTree = "<group>"; };
+		5C4998692C7E03060019C8D0 /* OnbordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingViewController.swift; sourceTree = "<group>"; };
 		5C4998712C7E03070019C8D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C4998742C7E03070019C8D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C4998762C7E03070019C8D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CC0385C2C7E06F7005E45CF /* OnboardingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentView.swift; sourceTree = "<group>"; };
+		5CC0385F2C7E0D3B005E45CF /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		5CC038612C7E1913005E45CF /* OnboardingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,16 +64,57 @@
 		5C4998642C7E03060019C8D0 /* TestRenesans */ = {
 			isa = PBXGroup;
 			children = (
-				5C4998652C7E03060019C8D0 /* AppDelegate.swift */,
-				5C4998672C7E03060019C8D0 /* SceneDelegate.swift */,
-				5C4998692C7E03060019C8D0 /* ViewController.swift */,
-				5C49986B2C7E03060019C8D0 /* Main.storyboard */,
+				5CC038582C7E0686005E45CF /* App */,
+				5CC038592C7E0696005E45CF /* OnboardingViewController */,
 				5C4998712C7E03070019C8D0 /* Assets.xcassets */,
 				5C4998732C7E03070019C8D0 /* LaunchScreen.storyboard */,
 				5C4998762C7E03070019C8D0 /* Info.plist */,
-				5C49986E2C7E03060019C8D0 /* TestRenesans.xcdatamodeld */,
 			);
 			path = TestRenesans;
+			sourceTree = "<group>";
+		};
+		5CC038582C7E0686005E45CF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5C4998652C7E03060019C8D0 /* AppDelegate.swift */,
+				5C4998672C7E03060019C8D0 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5CC038592C7E0696005E45CF /* OnboardingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5CC0385E2C7E0D24005E45CF /* Model */,
+				5CC0385B2C7E06DD005E45CF /* View */,
+				5CC0385A2C7E06D2005E45CF /* ViewController */,
+			);
+			path = OnboardingViewController;
+			sourceTree = "<group>";
+		};
+		5CC0385A2C7E06D2005E45CF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5C4998692C7E03060019C8D0 /* OnbordingViewController.swift */,
+				5CC038612C7E1913005E45CF /* OnboardingDelegate.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5CC0385B2C7E06DD005E45CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CC0385C2C7E06F7005E45CF /* OnboardingContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CC0385E2C7E0D24005E45CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CC0385F2C7E0D3B005E45CF /* OnboardingModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +184,6 @@
 			files = (
 				5C4998752C7E03070019C8D0 /* LaunchScreen.storyboard in Resources */,
 				5C4998722C7E03070019C8D0 /* Assets.xcassets in Resources */,
-				5C49986D2C7E03060019C8D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,24 +194,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C4998702C7E03060019C8D0 /* TestRenesans.xcdatamodeld in Sources */,
-				5C49986A2C7E03060019C8D0 /* ViewController.swift in Sources */,
+				5C49986A2C7E03060019C8D0 /* OnbordingViewController.swift in Sources */,
+				5CC038602C7E0D3B005E45CF /* OnboardingModel.swift in Sources */,
+				5CC0385D2C7E06F7005E45CF /* OnboardingContentView.swift in Sources */,
 				5C4998662C7E03060019C8D0 /* AppDelegate.swift in Sources */,
 				5C4998682C7E03060019C8D0 /* SceneDelegate.swift in Sources */,
+				5CC038622C7E1913005E45CF /* OnboardingDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5C49986B2C7E03060019C8D0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C49986C2C7E03060019C8D0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5C4998732C7E03070019C8D0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -311,7 +347,6 @@
 				INFOPLIST_FILE = TestRenesans/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -338,7 +373,6 @@
 				INFOPLIST_FILE = TestRenesans/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -400,19 +434,6 @@
 			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		5C49986E2C7E03060019C8D0 /* TestRenesans.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5C49986F2C7E03060019C8D0 /* TestRenesans.xcdatamodel */,
-			);
-			currentVersion = 5C49986F2C7E03060019C8D0 /* TestRenesans.xcdatamodel */;
-			path = TestRenesans.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5C49985A2C7E03060019C8D0 /* Project object */;
 }

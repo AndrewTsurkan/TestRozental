@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  TestRenesans
-//
-//  Created by Андрей Цуркан on 27.08.2024.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -13,10 +6,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        let window = UIWindow(windowScene: windowScene)
+        window.makeKeyAndVisible()
+        let viewModel = OnboardingModel(onboardingImageViewName: "onboardingImage",
+                                        onboardingLabelText: "Добро \nпожаловать!",
+                                        clueLabelText: "Авторизуйтесь, чтобы продолжить работу",
+                                        enterButtonText: "Вход",
+                                        registrationButtonText: "Регистрация",
+                                        inviteButtonText: "Пригласить управлять своим домом")
+        window.rootViewController =  OnboardingViewController(viewModel: viewModel)
+        self.window = window
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -47,7 +47,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
 
